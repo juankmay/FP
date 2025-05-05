@@ -31,6 +31,49 @@
             background-color: #f5f5f5;
             overflow-x: hidden;
         }
+        /* Estilos principales del logo */
+.logo-container {
+    max-width: 400px;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.logo-capifp {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Efecto hover sutil */
+.logo-container:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* Versión reducida para footer */
+.footer-logo {
+    max-width: 200px;
+    margin: 0 auto 1rem;
+}
+
+.footer-logo .logo-capifp {
+    filter: brightness(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .logo-container {
+        max-width: 280px;
+    }
+    
+    .logo-capifp text {
+        font-size: 32px !important;
+    }
+    
+    .footer-logo {
+        max-width: 150px;
+    }
+}
         
         /* Navegación flotante */
         .nav-floating {
@@ -391,13 +434,33 @@
     <button class="nav-button nav-up" id="navUp">↑</button>
     <button class="nav-button nav-down" id="navDown">↓</button>
     
-    <header>
-        <div class="container">
-            <img src="https://via.placeholder.com/150x80?text=CAPIFP" alt="Logo CAPIFP" class="logo">
-            <h1>Centro Andaluz del Profesorado para Innovación en la FP</h1>
-            <p>Impulsando la excelencia en la Formación Profesional de Andalucía</p>
+   <!-- En el header (reemplaza el placeholder) -->
+<header>
+    <div class="container">
+        <div class="logo-container">
+            <svg class="logo-capifp" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+                <!-- Fondo azul institucional -->
+                <rect width="400" height="160" rx="10" fill="#0056b3"/>
+                
+                <!-- Texto principal -->
+                <text x="200" y="70" font-family="'Segoe UI', Tahoma, sans-serif" font-size="42" fill="white" 
+                      text-anchor="middle" font-weight="bold">CAPIFP</text>
+                
+                <!-- Línea naranja decorativa -->
+                <line x1="100" y1="85" x2="300" y2="85" stroke="#ff6600" stroke-width="3"/>
+                
+                <!-- Texto secundario -->
+                <text x="200" y="110" font-family="'Segoe UI', Tahoma, sans-serif" font-size="22" fill="white" 
+                      text-anchor="middle">Centro Andaluz de FP</text>
+                
+                <!-- Detalle de círculos -->
+                <circle cx="320" cy="40" r="15" fill="#ff6600"/>
+                <circle cx="350" cy="40" r="10" fill="#ffffff"/>
+            </svg>
         </div>
-    </header>
+        <h1>Innovación en Formación Profesional</h1>
+    </div>
+</header>
     
     <!-- Sección 1: Introducción -->
     <section id="section1">
@@ -613,7 +676,8 @@
                     height="450" 
                     style="border:0;" 
                     allowfullscreen="" 
-                    loading="lazy"></iframe>
+                    loading="lazy">
+                                   </iframe>
         </div>
         <div class="location-info">
             <h3>Dirección</h3>
