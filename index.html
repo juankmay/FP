@@ -414,6 +414,48 @@
 .location-info p {
     margin-bottom: 0.5rem;
 }
+/* Objetivos en tarjetas */
+.objective-card {
+    background-color: rgba(0, 86, 179, 0.08);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 86, 179, 0.1);
+}
+
+.objective-card:nth-child(odd) {
+    background-color: rgba(255, 102, 0, 0.08);
+    border-color: rgba(255, 102, 0, 0.1);
+}
+
+.objective-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.objective-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.objective-card .timeline-date {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.objective-card:nth-child(odd) h3,
+.objective-card:nth-child(odd) .timeline-date {
+    color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+        
     </style>
 </head>
 <body>
@@ -553,42 +595,43 @@
         </div>
     </section>
     
-    <!-- Sección 5: Objetivos -->
-    <section id="section5">
-        <div class="container">
-            <h2>Objetivos Estratégicos</h2>
+    <!-- Reemplaza la sección 5 con este código -->
+<section id="section5">
+    <div class="container">
+        <h2>Objetivos Estratégicos</h2>
+        <div class="grid">
+            <div class="objective-card">
+                <div class="timeline-date">2025-2029</div>
+                <h3>Convertir al CAPIFP en un polo de excelencia formativa</h3>
+                <p>Diseñar e implementar un catálogo dinámico de acciones formativas centradas en metodologías activas, competencias digitales avanzadas y actualización técnico-sectorial.</p>
+            </div>
             
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2025-2029</div>
-                    <h3>Convertir al CAPIFP en un polo de excelencia formativa e innovación pedagógica</h3>
-                    <p>Diseñar e implementar un catálogo dinámico de acciones formativas centradas en metodologías activas, competencias digitales avanzadas y actualización técnico-sectorial.</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">2025-2029</div>
-                    <h3>Impulsar la innovación y transferencia de conocimiento</h3>
-                    <p>Fomentar proyectos de innovación educativa y tecnológica, crear un Repositorio Digital Andaluz de Buenas Prácticas y promover el intercambio de experiencias.</p>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-date">2025-2029</div>
-                    <h3>Colaborar estratégicamente con el entorno</h3>
-                    <p>Establecer convenios con asociaciones sectoriales y clústeres líderes para desarrollar proyectos de FP Dual, formación e I+D+i aplicada.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2025-2029</div>
-                    <h3>Diagnosticar necesidades y oportunidades de formación.</h3>
-                    <p>Establecer convenios con asociaciones sectoriales y clústeres líderes para desarrollar proyectos de FP Dual, formación e I+D+i aplicada.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2025-2029</div>
-                    <h3>Consolidar operativamente el centro</h3>
-                    <p>Establecer convenios con asociaciones sectoriales y clústeres líderes para desarrollar proyectos de FP Dual, formación e I+D+i aplicada.</p>
-                </div>
+            <div class="objective-card">
+                <div class="timeline-date">2025-2029</div>
+                <h3>Impulsar la innovación y transferencia de conocimiento</h3>
+                <p>Fomentar proyectos de innovación educativa y tecnológica, crear un Repositorio Digital Andaluz de Buenas Prácticas y promover el intercambio de experiencias.</p>
+            </div>
+            
+            <div class="objective-card">
+                <div class="timeline-date">2025-2029</div>
+                <h3>Colaborar estratégicamente con el entorno</h3>
+                <p>Establecer convenios con asociaciones sectoriales y clústeres líderes para desarrollar proyectos de FP Dual, formación e I+D+i aplicada.</p>
+            </div>
+            
+            <div class="objective-card">
+                <div class="timeline-date">2025-2029</div>
+                <h3>Diagnosticar necesidades y oportunidades de formación</h3>
+                <p>Implementar un sistema integral de detección de necesidades formativas basado en análisis de datos y colaboración con el sector productivo.</p>
+            </div>
+            
+            <div class="objective-card">
+                <div class="timeline-date">2025-2029</div>
+                <h3>Consolidar operativamente el centro</h3>
+                <p>Establecer una estructura organizativa ágil y eficiente que garantice el cumplimiento de los objetivos estratégicos.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     
     <!-- Sección 6: Áreas -->
     <section id="section6">
